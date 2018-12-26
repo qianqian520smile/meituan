@@ -35,30 +35,45 @@
   section {
       @include flex;
       width: 100%;
+      height: 100%;
       overflow: hidden;
-      overflow-y: auto;
       background: pink;
-      nav {
-          text-align: center;
-          input {
-              width: 80%;
-              height: pxTorem(45px);
-              background: #ccc;
-              border-radius: pxTorem(25px);
+      .content {
+          width: 100%;
+      }
+  }
+  
+  nav {
+      text-align: center;
+      input {
+          width: 80%;
+          height: pxTorem(45px);
+          background: #ccc;
+          border-radius: pxTorem(25px);
+      }
+  }
+  
+  .swiper-container {
+      width: 100%;
+      .swiper-slide {
+          width: 100%;
+          height: pxTorem(200px);
+          background: lime;
+          @include box_flex;
+          flex-wrap: wrap;
+          dl {
+              width: 20%;
           }
       }
-      .swiper-container {
+  }
+  
+  .bigimg {
+      width: 100%;
+      height: pxTorem(200px);
+      background: orangered;
+      img {
           width: 100%;
-          .swiper-slide {
-              width: 100%;
-              height: pxTorem(200px);
-              background: lime;
-              @include box_flex;
-              flex-wrap: wrap;
-              dl {
-                  width: 20%;
-              }
-          }
+          height: pxTorem(200px);
       }
   }
   
